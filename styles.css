@@ -157,7 +157,6 @@ select, input {
     display: none;
 }
 
-/* Media Query for mobile responsiveness */
 @media (max-width: 768px) {
     .product-details-container {
         flex-direction: column;
