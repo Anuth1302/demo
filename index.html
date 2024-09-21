@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-details-container">
+        <div class="carousel-container">
+            <div class="carousel">
+                <p id="loading">Loading...</p>
+                <img id="main-image" class="main-image" src="" alt="Main Product Image">
+                <div class="thumbnails" id="thumbnails"></div>
+                <button class="arrow left-arrow" id="prev-btn">&lt;</button>
+                <button class="arrow right-arrow" id="next-btn">&gt;</button>
+            </div>
+        </div>
+        <div class="product-info-card">
+            <h2>Jio Laptop</h2>
+            <p>Price: 34099</p>
+            <p>8GB RAM | 256GB HDD | White | 6 hours battery life </p>
+            <label for="variant">Choose a variant:</label>
+            <select id="variant">
+                <option value="size-1">8GB | 256Gb</option>
+                <option value="size-2">12GB | 256Gb</option>
+                <option value="size-3">12GB | 512Gb</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1" min="1">
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <p id="confirmation-message" class="hidden">Product added to cart!</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
